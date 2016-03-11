@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'robotoregular';
+}
+
+a{
+	color:black;
+	text-decoration: none;
+}
+
+h1{
+	width:150px;
+	display:inline-block;
+	height: 38px;
+	text-indent: -9999px;
+	background:url(../img/logo.png);
+	overflow:hidden;
+}
+
+#login{
+	width:30%;
+	text-align: center;
+	margin:20vh auto 0;
+}
+
+#login span{
+	display:block;
+}
+
+#login input{
+	width:75%;
+	padding: 5px;
+	font-size:1.25rem;
+	color:grey;
+	font-family:'robotobold';
+	box-shadow:0 0px 3px black;
+	border:none;
+}
+
+#login div{
+	margin-top:5%;
+}
+
+#login input[type='submit']{
+	border: 1px solid grey;
+}
+
+.panel{
+	width:100%;
+	background:#52b6ec;
+	padding:3px;
+}
+
+.panel ul li{
+	display:inline-block;
+	margin:0 1%;
+}
+
+.panel ul li:last-child{
+	position:absolute;
+	right: 3%;
+	top:0;
+}
+
+.panel ul li a{
+	color:white;
+	font-size:1.5rem;
+}
+
+.alumnos{
+	width:80%;
+	margin:10% auto;
+	position:relative;
+}
+
+.alumnos h2{
+	margin-bottom:2%;
+	display:inline-block;
+}
+
+.alumnos table{
+	width: 100%;
+}
+
+.alumnos table tr:first-child{
+	background:#52b6ec;
+}
+
+.alumnos table tr td{
+	text-align:center;
+	padding:10px;
+}
+
+.alumnos table tr td:last-child a{
+	display:block;
+	font-family:'robotobold';
+}
+
+.alumnos>a{
+	display:inline-block;
+	position:absolute;
+	right: 0;
+	background:#465BEC;
+	padding:10px;
+	border-radius:10px;
+	font-family:'robotobold';
+}
+
+.editar{
+	width:80%;
+	margin:8% auto 0;
+}
+
+.editar h2{
+	font-size:2rem;
+}
+
+.editar form{
+	margin-top:2%;
+}
+
+.editar form div span{
+	display:block;
+	font-size:1.50rem;
+}
+
+.editar form div{
+	display:inline-block;
+	width:25%;
+	margin:1%;
+}
+
+.editar form div input, .editar form div select{
+	width: 100%;
+	padding:5px;
+	font-size:1.25rem;
+	color:grey;
+}
+
+.editar form div:last-child{
+	display:block;
+	width:75%;
+	margin:3% auto 0;
+}
+
+.editar form div:last-child input{
+	width:25%;
+	color:black;
+}
