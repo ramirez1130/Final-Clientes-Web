@@ -13,7 +13,7 @@ $(document).ready(function(){
 			menu.css('top',top);
 			$(".usuario").append($(menu));
 			$(".menu-usuario").append("<a href='index.php?cat=perfil'>Perfil</a>");
-			$(".menu-usuario").append("<a href='modulos/cerrar_sesion.php'>Salir</a>");
+			$(".menu-usuario").append("<a href='modulos/actions/signOff.php'>Salir</a>");
 		}
 	});
 });

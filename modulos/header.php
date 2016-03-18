@@ -7,11 +7,39 @@
 			if( isset($_SESSION['login'])){
 				nivel($_SESSION['nivel'],$_SESSION['nombre']);
 			}else{
-				$secciones = mysqli_query($cnx,"SELECT * FROM secciones WHERE ID=1 OR ID=5 OR ID=6 OR ID=7 ORDER BY ID");
+				$sections = mysqli_query($cnx,"SELECT * FROM secciones ORDER BY ID");
+				$exist;
 				if(isset($_GET['cat'])){
-					navegacion($_GET['cat'],$secciones);
+					while( $a = mysqli_fetch_assoc($sections) ){
+						$get = strtolower($a['SECCION']);
+						if( $a['SECCION'] == "Registrate" ){
+							$a['SECCION'] = accentuate($a['SECCION'],3);
+						}
+
+						if( $get == $_GET['cat'] ){
+							echo parse_utf8("<li><a href='index.php?cat=$get' class='selected'>$a[SECCION]</a></li>");
+							$exist = true;
+						}else{
+							echo parse_utf8("<li><a href='index.php?cat=$get'>$a[SECCION]</a></li>");
+						}
+					}
+					if( !($exist) ){
+						Header("Location:index.php");
+					}
 				}else{
-					navegacion('home',$secciones);
+					while( $a = mysqli_fetch_assoc($sections) ){
+						$get = strtolower($a['SECCION']);
+						
+						if( $a['SECCION'] == "Registrate" ){
+							$a['SECCION'] = accentuate($a['SECCION'],3);
+						}
+
+						if( $get == 'home' ){
+							echo parse_utf8("<li><a href='index.php?cat=$get' class='selected'>$a[SECCION]</a></li>");
+						}else{
+							echo parse_utf8("<li><a href='index.php?cat=$get'>$a[SECCION]</a></li>");
+						}
+					}
 				}
 			}
 			?>

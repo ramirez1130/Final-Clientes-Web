@@ -208,14 +208,34 @@ header div nav ul li a{
     background:#1be01b;
 }
 
-/*Formulario para ingresar*/
-#ingresar{
+.contenido-no-home{
     background:white;
     box-shadow:0 12px 15px rgba(0,0,0,0.5);
     height: auto;
     margin:20vh auto 0;
-    padding-top:0;
     padding:35px;
+    position:relative;
+    width:960px;
+}
+
+.contenido-no-home h1{
+    background:#51B3E9;
+    color:white;
+    font-size:4rem;
+    left:0;
+    padding:20px;
+    border-bottom:3px dashed white;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+.contenido-no-home form{
+    margin-top:100px;
+}
+
+/*Formulario para ingresar*/
+#ingresar{
     text-align: center;
     width:25vw;
 }

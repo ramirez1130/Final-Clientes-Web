@@ -22,7 +22,7 @@
 					include("modulos/home.php");
 				break;
 				case 'contacto':
-					include('modulos/contacto.php');
+					include('modulos/contact.php');
 				break;
 				case 'ingresar':
 					if( isset($_SESSION['login']) ){
@@ -32,28 +32,28 @@
 					}
 				break;
 				case 'blog':
-					crear_sss('blog');
+					include("modulos/blog.php");
 				break;
 				case 'comedor':
-					crear_sss('comedor');
+					include("modulos/comedor.php");
 				break;
 				case 'apuntes':
-					crear_sss('apuntes');
+					include("modulos/apuntes.php");
 				break;
 				case 'lista':
-					crear_sss('lista');
+					include("modulos/lista.php");
 				break;
 				case 'nueva_nota':
-					crear_sss('nueva_nota');
+					include("modulos/nueva_nota.php");
 				break;
 				case 'alumnos':
-					crear_sss('alumnos');
+					include("modulos/alumnos.php");
 				break;
 				case 'perfil':
-				crear_sss('perfil');
+					include("modulos/alumnos.php");
 				break;
-				default:
-					include("modulos/home.php");
+				case 'registrate':
+					include("modulos/registrate.php");
 				break;
 			}
 		}else{

@@ -1,6 +1,6 @@
 <article class="contenido perfil">
 	<h2>Perfil</h2>
-	<form action="modulos/update_data.php" method="post">
+	<form action="modulos/actions/update_data.php" method="post">
 		<?php
 			global $cnx;
 			$datos_personales = mysqli_query($cnx,"SELECT * FROM personas WHERE ID = '$_SESSION[login]'");
